@@ -1,0 +1,89 @@
+.joinPage {
+  background-color: rgb(57, 48, 48);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.joinContainer {
+  /* border: 2px solid white; */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.joinContainer > img {
+  width: 10vmax;
+}
+.joinContainer > h1 {
+  color: white;
+  font-size: 2.5vmax;
+  font-family: "Roboto" sans-serif;
+  width: 25vmax;
+  border-bottom: 0.2vmax solid white;
+  padding: 1vmax;
+  text-align: center;
+}
+
+#joinName {
+  width: 25vmax;
+  padding: 1.2vmax;
+  border: none;
+  font-size: 1.2vmax;
+  margin: 2vmax;
+  box-sizing: border-box;
+}
+.joinbtn {
+  width: 25vmax;
+  padding: 1.2vmax;
+  border: none;
+  font-size: 1.2vmax;
+  outline: none;
+  background-color: rgb(82, 167, 82);
+  color: white;
+  font-family: "Roboto";
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.joinbtn:hover {
+  background-color: rgb(9, 100, 9);
+}
+
+@media (max-aspect-ratio: 7/10) {
+  .joinPage {
+    align-items: flex-start !important;
+  }
+  .joinContainer {
+    width: 100%;
+    /* height: 50%; */
+    margin-top: 30vw;
+  }
+  .joinContainer > img {
+    width: 25vw !important;
+  }
+  .joinContainer > h1 {
+    width: 15vmax;
+    border-bottom: 0.1vmax solid white;
+    padding: 1vmax;
+  }
+  .joinContainer > h1 {
+    width: 55vw !important;
+    font-size: 6vw;
+    border-bottom: 0.6vw solid white !important;
+    padding: 3vw !important;
+  }
+  #joinName {
+    width: 65vw;
+    padding: 4vw;
+    font-size: 5vw;
+    margin: 5vw;
+  }
+  .joinbtn {
+    width: 55vw;
+    padding: 3.5vw;
+    font-size: 4.5vw;
+  }
+}
